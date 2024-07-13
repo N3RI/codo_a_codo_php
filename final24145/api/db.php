@@ -1,8 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "movies_cac";
+$username = "u334307892_php";
+$password = "rVYS>cUiT&3";
+$dbname = "u334307892_php";
 
 try 
 {
