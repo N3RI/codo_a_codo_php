@@ -9,8 +9,7 @@ include 'Peliculas.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-switch ($method) 
-{
+switch ($method) {
     case 'GET':
         handleGet($conn);
         break;
@@ -72,6 +71,7 @@ function handlePost($conn)
     $data = json_decode(file_get_contents('php://input'), true);
 
     $requiredFields = ['titulo', 'fecha_lanzamiento','genero' ];
+
     foreach ($requiredFields as $field) 
     {
         if (!isset($data[$field])) 
@@ -120,7 +120,8 @@ function handlePut($conn)
         $fields = [];
         $params = [];
 
-        if ($pelicula->titulo !== null) {
+        if ($pelicula->titulo !== null) 
+        {
             $fields[] = 'titulo = ?';
             $params[] = $pelicula->titulo;
         }
