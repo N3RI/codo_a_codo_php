@@ -32,7 +32,7 @@ form.addEventListener('submit', function(event)
 
 function createItem(data) 
 {
-    fetch('http://localhost/_Final2024php/api/api.php', 
+    fetch('https://n3ri.com.ar/codo_a_codo_php/final24145/api/api.php', 
         {
         method: 'POST',
         headers: {
@@ -66,7 +66,7 @@ function createItem(data)
    
 // Función para cargar los elementos desde la API
 function loadItems() {
-    fetch('http://localhost/_Final2024php/api/api.php')
+    fetch('https://n3ri.com.ar/codo_a_codo_php/final24145/api/api.php')
     .then(response => response.json())
     .then(data => {
         itemsTableBody.innerHTML = '';
@@ -113,7 +113,7 @@ function loadItems() {
   // Función para borrar una pelicula
   function deleteItem(id) 
   {
-    fetch(`http://localhost/_Final2024php/api/api.php?id=${id}`, 
+    fetch(`https://n3ri.com.ar/codo_a_codo_php/final24145/api/api.php?id=${id}`, 
         {
         method: 'DELETE',
         headers: {
@@ -134,7 +134,7 @@ function loadItems() {
 
 function updateItem(data) 
     {
-        fetch(`http://localhost/_Final2024php/api/api.php?id=${data.id}`, 
+        fetch(`https://n3ri.com.ar/codo_a_codo_php/final24145/api/api.php?id=${data.id}`, 
             {
             method: 'PUT',
             headers: {
