@@ -1,8 +1,15 @@
 <?php
+// HOSTING
+// $servername = "localhost";
+// $username = "u334307892_php";
+// $password = "rVYS>cUiT&3";
+// $dbname = "u334307892_php";
+
+// LOCAL
 $servername = "localhost";
-$username = "u334307892_php";
-$password = "rVYS>cUiT&3";
-$dbname = "u334307892_php";
+$username = "root";
+$password = "";
+$dbname = "movies_cac";
 
 try 
 {
