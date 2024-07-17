@@ -63,14 +63,14 @@ document.addEventListener('DOMContentLoaded', function() {
 											<td>${invitado.nombre}</td>
 											<td>${invitado.email}</td>                    
 											<td>
-													<button class="btn btn-danger" onclick="deleteItem(${invitado.id})">Eliminar</button>
+													<button class="btn btn-danger" onclick="deleteItem(${invitado.id})"><i class="fas fa-trash"></i></button>
 											</td>
 											<td>
 													<button class="btn btn-success" onclick="editItem(
 													${invitado.id}, 
 													'${invitado.apellido}', 
 													'${invitado.nombre}', 
-													'${invitado.email}')">Editar</button>
+													'${invitado.email}')"><i class="far fa-edit"></i></button>
 											</td>
 									`;
 									itemsTableBody.appendChild(row);
