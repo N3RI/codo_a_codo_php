@@ -7,7 +7,7 @@ id int not null auto_increment primary key,
 apellido varchar(50),
 nombre varchar(55),
 duracion varchar(50),
-email varchar(50),
+email varchar(50)
 );
 
 

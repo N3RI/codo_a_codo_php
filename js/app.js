@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	function createItem(data) {
-			fetch('https://localhost/codo_a_codo_php/api/api.php', {
+			fetch('https://n3ri.com.ar/codo_a_codo_php/api/api.php', {
 					method: 'POST',
 					headers: {
 							'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Función para cargar los elementos desde la API
 	function loadItems() {
-			fetch('https://localhost/codo_a_codo_php/api/api.php')
+			fetch('https://n3ri.com.ar/codo_a_codo_php/api/api.php')
 			.then(response => response.json())
 			.then(data => {
 					itemsTableBody.innerHTML = '';
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Función para borrar un invitado
 	function deleteItem(id) {
-			fetch(`https://localhost/codo_a_codo_php/api/api.php?id=${id}`, {
+			fetch(`https://n3ri.com.ar/codo_a_codo_php/api/api.php?id=${id}`, {
 					method: 'DELETE',
 					headers: {
 							'Content-Type': 'application/json'
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 	function updateItem(data) {
-			fetch(`https://localhost/codo_a_codo_php/api/api.php?id=${data.id}`, {
+			fetch(`https://n3ri.com.ar/codo_a_codo_php/api/api.php?id=${data.id}`, {
 					method: 'PUT',
 					headers: {
 							'Content-Type': 'application/json',
